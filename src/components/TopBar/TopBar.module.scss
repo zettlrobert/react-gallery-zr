@@ -1,0 +1,16 @@
+@use '../../shared-styles/mixins' as *;
+
+.TopBar {
+  @include centerY;
+  padding: 32px;
+  background-color: var(--primary-light);
+  height: 80px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@include medium-screen {
+  .TopBar {
+	justify-content: space-between;
+  }
+}

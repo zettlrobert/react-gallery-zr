@@ -1,0 +1,38 @@
+.SwitchContainer {
+  position: relative;
+  z-index: 6000;
+  width: 50px;
+  height: 25px;
+}
+
+.Toggle {
+  input {
+    display: none;
+  }
+
+  .ToggleMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-light);
+    width: 40px;
+    height: 20px;
+    border-radius: 120px;
+  }
+
+  .ToggleMark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(5px, -50%);
+    border-radius: 50%;
+    content: '';
+    background-color: var(--secondary-dark);
+    height: 15px;
+    width: 15px;
+  }
+
+  input:checked + .ToggleMark::before {
+    transform: translate(20px, -50%);
+  }
+}

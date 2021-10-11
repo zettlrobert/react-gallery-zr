@@ -1,0 +1,38 @@
+@use '../../shared-styles/mixins' as *;
+
+.Gallery {
+  border: 1px solid blue;
+  position: relative;
+  min-height: 100vh;
+
+  .GalleryContainer {
+	display: grid;
+	border: 2px solid orange;
+	gap: 16px;
+  }
+
+  @include medium-screen {
+	.GalleryContainer {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	}
+  }
+
+  @include large-screen {
+	.GalleryContainer {
+	  display: grid;
+	  grid-template-columns: repeat(4, 1fr);
+	}
+  }
+  /* FullScreen Overlay */
+}
+
+.Full {
+  padding: 0;
+}
+
+.Inset {
+  padding: 60px;
+}
+
+

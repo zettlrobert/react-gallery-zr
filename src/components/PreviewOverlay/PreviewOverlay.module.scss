@@ -1,0 +1,38 @@
+@use '../../shared-styles/mixins' as *;
+
+  .Preview {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+
+	.Close {
+	  position: absolute;
+	  right: 16px;
+	  top: 16px;
+	  font-size: 64px;
+	  color: var(--primary);
+	}
+
+	.ArrowLeft {
+	  @include absoluteContainerCenterY;
+	  position: absolute;
+	  left: 16px;
+	  font-size: 64px;
+	  color: var(--primary);
+	}
+
+	.ArrowRight {
+	  @include absoluteContainerCenterY;
+	  position: absolute;
+	  right: 16px;
+	  font-size: 64px;
+	  color: var(--primary);
+	}
+  }
+
+  .PreviewHidden {
+	display: none;
+  }
+
