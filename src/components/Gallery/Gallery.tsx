@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React  from "react";
 import { GalleryProps, GalleryVariant } from "./Gallery.types";
 import styles from "./Gallery.module.scss";
 import { ReactElement, useState } from "react";
@@ -104,6 +104,7 @@ const Gallery = (props: GalleryProps) => {
                 <div
                   key={elementUUID}
                   onClick={() => onGalleryItemClickHandler(child, index)}
+                  className={styles.GalleryItem}
                 >
                   {child}
                 </div>

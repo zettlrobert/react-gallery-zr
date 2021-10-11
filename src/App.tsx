@@ -22,7 +22,12 @@ function App() {
 
   // Generate and fill Mock Item Array
   for (let i = 0; i < numberOfElements; i++) {
-    mockElements.push(<div className={styles.mockItem}>Item: {i}</div>);
+    mockElements.push(
+      <div className={styles.mockItem}>
+        <img src="http://placekitten.com/g/600/300" alt="" />
+        <h3>Kitten: {i}</h3>
+      </div>
+    );
   }
 
   // Toggle between Gallery Variants

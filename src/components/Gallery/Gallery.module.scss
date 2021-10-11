@@ -1,13 +1,16 @@
 @use '../../shared-styles/mixins' as *;
 
 .Gallery {
-  border: 1px solid blue;
   min-height: 100vh;
 
   .GalleryContainer {
 	display: grid;
-	border: 2px solid orange;
 	gap: 16px;
+
+	.GalleryItem {
+	  @include centerXandY;
+	  overflow: hidden;
+	}
   }
 
   @include medium-screen {
