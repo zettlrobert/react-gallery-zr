@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 
 export enum GalleryVariant {
   INSET = "inset",
@@ -7,5 +7,5 @@ export enum GalleryVariant {
 
 export interface GalleryProps {
   variant?: GalleryVariant;
-  children: ReactNode | ReactNode[];
+  children: ReactElement | ReactElement[];
 }
