@@ -1,0 +1,15 @@
+/* Default Styles Apply to everything until  769px, small-screen */
+
+/* Overwrite small-screen styles */
+@mixin medium-screen {
+  @media only screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+/* Overwrite small-screen and medium-screen styles */
+@mixin large-screen {
+  @media only screen and (min-width: 1201px) {
+	@content;
+  }
+}

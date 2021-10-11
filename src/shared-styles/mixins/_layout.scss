@@ -1,0 +1,15 @@
+@mixin centerXandY {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+@mixin centerY {
+  display: flex;
+  align-items: center;
+}
+
+@mixin absoluteContainerCenterY {
+  top: 50%;
+  transform: translateY(-50%);
+}

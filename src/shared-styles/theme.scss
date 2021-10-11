@@ -1,0 +1,14 @@
+@mixin defaultTheme {
+--primary: rgba(255, 111, 0, 1);
+--primary-light: rgba(255, 160, 64, 1);
+--primary-dark: rgba(196, 62, 0, 1);
+--secondary: rgba(38, 50, 56, 1);
+--secondary-light: rgba(79, 91, 98, 1);
+--secondary-dark: rgba(0, 10, 18, 1);
+--text-on-primary: rgba(0, 0, 0, 1);
+--text-on-secondary: rgba(255, 255, 255, 1);
+}
+
+:root {
+  @include defaultTheme;
+}
